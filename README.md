@@ -28,12 +28,12 @@ If a module runs long, let it spill into the next week and cut project days from
 
 ## Day 1 · Setup
 
-- [ ] **1** · Sat 7 Nov · Enroll in the course, create this repo, watch the first 2 videos (long session) →
+- [X] **1** · Sat 7 Nov · Enroll in the course, create this repo, watch the first 2 videos (long session) →
 
 ## Week 1 · Module 1: RAG Overview
 
-- [ ] **2** · Sun 8 Nov · Preview Module 1 →
-- [ ] **3** · Mon 9 Nov · Videos →
+- [X] **2** · Sun 8 Nov · Preview Module 1 →
+- [X] **3** · Mon 9 Nov · Videos →
 - [ ] **4** · Tue 10 Nov · Videos →
 - [ ] **5** · Wed 11 Nov · Videos + readings →
 - [ ] **6** · Thu 12 Nov · Finish videos →
