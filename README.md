@@ -34,7 +34,7 @@ If a module runs long, let it spill into the next week and cut project days from
 
 - [X] **2** · Sun 8 Nov · Preview Module 1 →
 - [X] **3** · Mon 9 Nov · Videos →
-- [ ] **4** · Tue 10 Nov · Videos →
+- [X] **4** · Tue 10 Nov · Videos →
 - [ ] **5** · Wed 11 Nov · Videos + readings →
 - [ ] **6** · Thu 12 Nov · Finish videos →
 - [ ] **7** · Fri 13 Nov · Graded quiz →
