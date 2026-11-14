@@ -38,7 +38,7 @@ If a module runs long, let it spill into the next week and cut project days from
 - [X] **5** · Wed 11 Nov · Videos + readings →
 - [X] **6** · Thu 12 Nov · Finish videos →
 - [X] **7** · Fri 13 Nov · Graded quiz →
-- [ ] **8** · Sat 14 Nov · Programming assignment + labs (long) →
+- [X] **8** · Sat 14 Nov · Programming assignment + labs (long) →
 
 ## Week 2 · Module 2: Information Retrieval and Search Foundations
 
