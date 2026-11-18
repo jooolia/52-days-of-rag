@@ -13,5 +13,10 @@
     - TF (term frequency) scoring - look at the counts per document and normalize for document length
     - TF-IDF - inverse document frequency. So rewards rare words. Often use log of the IDF for each word.
     - Most systems use an updated version of this kind of keyword scoring called BM25. 
+- BM25 - for best matching 25 from the 25th from a series of algorithms. Improves on TF-IDF by not being so extreme in the document length normalization (e.g. long documents are not down-weighted as much as in TF-IDF) and also with the term frequency, it saturates at a certain frequency meaning that if a term is seen 10x in a document, a document with the term 20x is not ranked 2x better but maybe 1.3. This is called term frequency saturation. Two tunable hyperparameters b and k that can tune it to your corpus of documents. 
+- BM25 is a bag of words approach. Also called lexical search (as opposed to semantic).
+
+## Semantic search
+
 
 
