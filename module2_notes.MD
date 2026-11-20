@@ -19,4 +19,31 @@
 ## Semantic search
 
 
+Embedding models map words, sentences or documents to space. More similar things are mapped closer together in vector space. 
+
+Cosine similarity - mesures directions of vectors. Closer to 1 means closer to the same orientation. Cosine similarities range from -1 to 1. -1 vectors face in opposite directions. 
+Euclidean distance - distance between words, sentences or documents in vector space. Items closer together show smaller distances. 
+Dot product - length of the projection of one vector onto another. If two vectors are of similar length and direction the projection will be larger if at 90 degree angle it will be 0. Opposite directions will be negative. 
+
+Both documents and prompts need to be embedded. Then prompt (or query) is compared to the documents, then documents are ranked based on chosen metrics.
+
+Training embedding models is based on negative and positive pairs. Start with random initializaiton. Then contrastive training process. High dimentional space gives more possibilities to represent different concepts. Only compare vectors from the same embedding models. 
+
+
+
+
+
+## Python notes:
+
+- len(np.shape(x)) is the number of dimensions (x.ndim), not the number of elements.
+(3,) is one vector. (2, 3) is a batch of 2 vectors.
+- Wrapping a single vector: [v] turns shape (3,) into (1, 3), so the same function handles one vector or many. The built-in is np.atleast_2d(v).
+That's why functions return an array even for one score, and why you see [0] at the end.
+- ** is the power operator, applied element by element on arrays.
+enumerate(xs) gives (index, item) pairs. zip(a, b) steps through two lists side by side, with no index needed.
+- vectorized_words[words.index(word)] is a lookup across two lists that must stay in the same order. A dictionary is clearer and faster: word_to_vec = dict(zip(words, vectors)).
+- Don't put a constant lookup inside a loop. Compute it once, before the loop.
+- Tuples are immutable. np.shape() returns one. Tuples can be dict keys (lists can't). A list inside a tuple can still change.
+
+
 
