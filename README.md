@@ -46,15 +46,15 @@ If a module runs long, let it spill into the next week and cut project days from
 - [X] **10** · Mon 16 Nov · Videos →
 - [X] **11** · Tue 17 Nov · Videos →
 - [X] **12** · Wed 18 Nov · Videos + reading →
-- [ ] **13** · Thu 19 Nov · Finish videos →
-- [ ] **14** · Fri 20 Nov · Graded quiz →
+- [X] **13** · Thu 19 Nov · Finish videos →
+- [X] **14** · Fri 20 Nov · Graded quiz →
 - [ ] **15** · Sat 21 Nov · Programming assignment + labs (long) →
 
 ## Week 3 · Module 3: Information Retrieval with Vector Databases
 
 - [ ] **16** · Sun 22 Nov · Preview Module 3 + one writing idea →
-- [ ] **17** · Mon 23 Nov · Videos →
-- [ ] **18** · Tue 24 Nov · Videos →
+- [X] **17** · Mon 23 Nov · Videos →
+- [X] **18** · Tue 24 Nov · Videos →
 - [ ] **19** · Wed 25 Nov · Videos + reading →
 - [ ] **20** · Thu 26 Nov · Finish videos →
 - [ ] **21** · Fri 27 Nov · Graded quiz →
