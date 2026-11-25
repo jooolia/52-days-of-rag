@@ -30,6 +30,24 @@ Both documents and prompts need to be embedded. Then prompt (or query) is compar
 Training embedding models is based on negative and positive pairs. Start with random initializaiton. Then contrastive training process. High dimentional space gives more possibilities to represent different concepts. Only compare vectors from the same embedding models. 
 
 
+## Combining rankings
+- Reciprocal rank fusion - rank in each document, score points based on ranking in each list with a a k "hyperparameter". it is in the denominator so increasing it reduces the differences between the 1st and 10th document (e.g. 1/1+1, 1/1+10 vs. 1/50+1, 1/50+10). 
+
+hyperparameters - are set by hand
+Beta - sets the amount of semantic vs keyword weighting. 
+
+## Evaluating retriever search quality
+Are we finding the relevant documents and how can we tell if adapting hyperparameters is doing anything?
+- Precision - number of relevant documents / number of documents retrieved. 
+- Recall - number of relevant documents retrieved / number of relevant documents in the knowledge base.
+Often trade precision for recall and vice versa. 
+K will influence these values. 
+
+Mean Average Precision (MAP) at K - evaluates average precision for relevant documents in first K documents retrieved. So calculated across many prompts and sets of documents retrieved and then averaged. 
+
+Reciprocal rank -  1 / rank of relevant document
+Mean reciprocal rank - do reciprocal rank for all relevant documents and then take the average
+
 
 
 
