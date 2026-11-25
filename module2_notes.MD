@@ -63,5 +63,54 @@ enumerate(xs) gives (index, item) pairs. zip(a, b) steps through two lists side 
 - Don't put a constant lookup inside a loop. Compute it once, before the loop.
 - Tuples are immutable. np.shape() returns one. Tuples can be dict keys (lists can't). A list inside a tuple can still change.
 
+## Questions
+
+# Module 2 · Open questions (answer by Sun 29 Nov)
+
+The graded quiz without options, plus questions that apply it to Gamarello. Answer from memory first, then check the slides. Bring your answers to Claude on Sunday.
+
+1. **TF-IDF in words.** Explain what TF and IDF each measure and why you multiply them. What score does a word like "the" end up with, and why?
+
+2. **What BM25 adds.** Name the two ways BM25 improves on TF-IDF. For each one, give the hyperparameter that controls it (`k1`, `b`) and say what happens at the extremes (for example `b = 0` vs `b = 1`). Then use the chocolate example from the quiz to explain why the cookbook chapters lost out under TF-IDF.
+
+3. **Bag of words.** "Job killed by memory limit" and "memory limit killed by job" look identical to a bag-of-words model. Why? Give one Gamarello query where losing word order would actually matter.
+
+4. **Keyword or semantic? (Gamarello)** For each query, say which kind of search would do better and why:
+   - `sbatch --gres=gpu:a100`
+   - "my job keeps dying when it runs out of memory" (the doc is titled "OOM killer")
+   - "Wie reserviere ich eine GPU?" (and the docs are in English)
+
+5. **How embeddings learn.** Explain contrastive learning with positive and negative pairs. Why does "happy" end up near "glad" when no one ever told the model they mean the same thing?
+
+6. **Metadata filtering.** Name 4 metadata fields worth attaching to Gamarello docs. Give one query where a filter helps and one where it would wrongly exclude the right document.
+
+7. **Hybrid search, in order.** Put these in the right order and justify it: semantic search, metadata filter, RRF, keyword search, top-K to the LLM.
+
+8. **RRF by hand.** With k = 60, a document is ranked 1st by BM25 and 3rd by semantic search. Another is ranked 2nd by both. Which one wins after RRF? Why does RRF use *ranks* instead of the raw scores?
+
+9. **Precision@K and recall@K.** Define both in one sentence each. For your Gamarello eval set, how would you calculate them? For a RAG system, which one matters more, and why isn't the answer simply "both"?
+
+---
+
+## My answers
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+8.
+
+9.
+
 
 
