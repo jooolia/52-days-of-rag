@@ -33,6 +33,10 @@ Training embedding models is based on negative and positive pairs. Start with ra
 ## Combining rankings
 - Reciprocal rank fusion - rank in each document, score points based on ranking in each list with a a k "hyperparameter". it is in the denominator so increasing it reduces the differences between the 1st and 10th document (e.g. 1/1+1, 1/1+10 vs. 1/50+1, 1/50+10). 
 
+```math
+\text{Score}(d) = \sum_{r=1}^{n} \frac{1}{k + \text{rank}_r(d)}
+```
+
 hyperparameters - are set by hand
 Beta - sets the amount of semantic vs keyword weighting. 
 
