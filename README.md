@@ -2,7 +2,7 @@
 
 # 52 days of RAG
 
-**7 Nov to 28 Dec 2026.** First the DeepLearning.AI *Retrieval Augmented Generation (RAG)* course on Coursera, then a small RAG over the Gamarello docs.
+**7 Nov to 28 Dec 2026.** First the DeepLearning.AI *Retrieval Augmented Generation (RAG)* course on deeplearning.ai, then a small RAG over the a selection of docs.
 
 ## Rules
 
